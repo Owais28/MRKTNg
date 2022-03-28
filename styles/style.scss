@@ -1,0 +1,132 @@
+:root {
+    --primary-font: 'Javata', serif;
+}
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Javata';
+    src: url(/font/Javata-L33an.otf);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    transition: all .5 ease-in-out;
+}
+
+li {
+    list-style: none;
+    padding-left: 0;
+    display: block;
+}
+
+.section {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: whitesmoke;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section>nav {
+    background-color: white;
+}
+
+.navbar {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 4rem;
+    align-items: center;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.185);
+    position: relative;
+    z-index: 200;
+}
+
+.navbar-container {
+    box-shadow: 0px 0px 0px black;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// logo
+.logo {
+    color: #FF5F00;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+// mobile Menu
+.mobile-menu {
+    font-size: 18px;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    background-color: whitesmoke;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    transition: all .4s ease-in-out;
+    height: 0;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // overflow: hidden;
+    li {
+        width: 100%;
+        padding: 16px 0px;
+        font-weight: 400;
+        color: black;
+        &:hover {
+            background-color: aliceblue;
+        }
+        a:active {
+            color: #FF5F00;
+        }
+    }
+}
+
+.container-mm {
+    position: absolute;
+    top: 0;
+}
+
+// Desktop Queueries
+@media screen and (min-width:991px) {
+    .navbar-container {}
+}
+
+.show {
+    height: 300px;
+}
