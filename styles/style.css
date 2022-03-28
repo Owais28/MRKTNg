@@ -96,6 +96,16 @@ li {
   font-size: 18px;
 }
 
+button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+#menu-button img {
+  width: 25px;
+}
+
 .mobile-menu {
   font-size: 18px;
   position: absolute;
