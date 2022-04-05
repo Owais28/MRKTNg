@@ -156,11 +156,13 @@ button {
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
+    -ms-grid-column: 1fr;
 }
 
 @media screen and (min-width:991px) {
     .grid-layout {
         grid-template-columns: 1fr 1fr;
+        -ms-grid-column: 1fr 1fr;
     }
 }
 
