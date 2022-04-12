@@ -314,4 +314,8 @@ button {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
 }
+
+.bg-color-accent {
+  background-color: #072e07;
+}
 /*# sourceMappingURL=style.css.map */
